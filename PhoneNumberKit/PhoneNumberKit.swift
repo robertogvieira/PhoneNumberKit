@@ -322,12 +322,7 @@ public final class PhoneNumberKit: NSObject {
     ///
     /// - returns: an optional Data representation of the metadata.
     public static func defaultMetadataCallback() throws -> Data? {
-        let frameworkBundle = Bundle.module
-        guard let jsonPath = frameworkBundle.path(forResource: "PhoneNumberMetadata", ofType: "json") else {
-            throw PhoneNumberError.metadataNotFound
-        }
-        let data = try Data(contentsOf: URL(fileURLWithPath: jsonPath))
-        return data
+        return nil
     }
 }
 
