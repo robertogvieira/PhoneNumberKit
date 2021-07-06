@@ -18,10 +18,7 @@ let package = Package(
                           "Resources/README.md",
                           "Resources/update.sh",
                           "Info.plist", 
-                          "Bundle+Resources.swift"],
-                resources: [
-                    .process("Resources/PhoneNumberMetadata.json")
-                ]),
+                          "Bundle+Resources.swift"]),
         .testTarget(name: "PhoneNumberKitTests",
                     dependencies: ["PhoneNumberKit"],
                     path: "PhoneNumberKitTests",
